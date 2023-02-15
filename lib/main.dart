@@ -17,17 +17,21 @@ class MyApp extends StatelessWidget {
           body: SafeArea(
             child: Column(
               children: [
-                const SizedBox(height: 50,),
+                const SizedBox(
+                  height: 50,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children:  [
+                  children: [
                     const Image(
                       height: 50,
                       width: 50,
                       image: AssetImage('images/logo.png'),
                     ),
-                    const SizedBox(width: 10,),
+                    const SizedBox(
+                      width: 10,
+                    ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
@@ -47,17 +51,16 @@ class MyApp extends StatelessWidget {
                         ),
                       ],
                     )
-
                   ],
                 ),
                 const Center(
                   child: Text(
-                  'Login',
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Rubik Medium',
-                      color: Color(0xff2D3142)),
-                ),
+                    'Log In',
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontFamily: 'Rubik Medium',
+                        color: Color(0xff2D3142)),
+                  ),
                 ),
                 const SizedBox(
                   height: 14,
@@ -71,6 +74,27 @@ class MyApp extends StatelessWidget {
                         fontFamily: 'Rubik Regular',
                         color: Color(0xff4C5980)),
                   ),
+                ),
+                const SizedBox(
+                  height: 100,
+                ),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    hintText: 'Email',
+                    fillColor: Color(0xffF8F9FA),
+                    filled: true,
+                    prefixIcon: Icon(
+                      Icons.alternate_email,
+                      color: Color(0xff323F4B),),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
                 ),
                 Container(
                   height: 50,
@@ -89,12 +113,14 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 15,),
+                const SizedBox(
+                  height: 15,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Text(
-                      'Dont have an account',
+                      'Dont have an account?',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 16,
@@ -102,7 +128,7 @@ class MyApp extends StatelessWidget {
                           color: Color(0xff4C5980)),
                     ),
                     Text(
-                      'Sign Up',
+                      ' Sign Up',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 16,
@@ -111,8 +137,6 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-
-
               ],
             ),
           ),
