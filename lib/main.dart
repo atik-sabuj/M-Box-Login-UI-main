@@ -72,9 +72,23 @@ class MyApp extends StatelessWidget {
                         color: Color(0xff4C5980)),
                   ),
                 ),
-
-
-
+                Container(
+                  height: 50,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    color: Color(0xffF9703B),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Log In',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontFamily: 'Rubik Medium',
+                          color: Colors.white),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
