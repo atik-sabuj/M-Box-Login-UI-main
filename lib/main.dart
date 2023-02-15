@@ -14,6 +14,20 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           backgroundColor: Colors.white,
+          body: SafeArea(
+            child: Column(
+              children: [
+                Center(
+                  child: Text(
+                    'Login' ,
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontFamily: 'Rubik Medium'),
+                  ),
+                )
+              ],
+            ),
+          ),
         ));
   }
 }
