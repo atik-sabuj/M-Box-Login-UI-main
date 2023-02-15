@@ -16,13 +16,25 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white,
           body: SafeArea(
             child: Column(
-              children: [
+              children: const [
                 Center(
                   child: Text(
-                    'Login' ,
+                    'Login',
                     style: TextStyle(
                         fontSize: 25,
-                        fontFamily: 'Rubik Medium'),
+                        fontFamily: 'Rubik Medium',
+                        color: Color(0xff2D3142)),
+                  ),
+                ),
+                SizedBox(height: 14,),
+                Center(
+                  child: Text(
+                    'This is Basic Login Page,\n we have to login here successfully',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'Rubik Regular',
+                        color: Color(0xff4C5980)),
                   ),
                 )
               ],
