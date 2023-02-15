@@ -53,6 +53,9 @@ class MyApp extends StatelessWidget {
                     )
                   ],
                 ),
+                const SizedBox(
+                  height: 40,
+                ),
                 const Center(
                   child: Text(
                     'Log In',
@@ -79,20 +82,55 @@ class MyApp extends StatelessWidget {
                   height: 100,
                 ),
                 TextFormField(
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     hintText: 'Email',
-                    fillColor: Color(0xffF8F9FA),
+                    fillColor: const Color(0xffF8F9FA),
                     filled: true,
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.alternate_email,
                       color: Color(0xff323F4B),),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffE4E7EB),
                       ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  ),
+
+                const SizedBox(
+                  height: 20,
+                ),
+
+                TextFormField(
+                  decoration: InputDecoration(
+                    hintText: 'Password',
+                    fillColor: const Color(0xffF8F9FA),
+                    filled: true,
+                    prefixIcon: const Icon(
+                      Icons.lock_open,
+                      color: Color(0xff323F4B),),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),
+
                 const SizedBox(
                   height: 20,
                 ),
