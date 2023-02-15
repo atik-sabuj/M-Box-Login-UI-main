@@ -89,6 +89,30 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(height: 15,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text(
+                      'Dont have an account',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontFamily: 'Rubik Regular',
+                          color: Color(0xff4C5980)),
+                    ),
+                    Text(
+                      'Sign Up',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontFamily: 'Rubik Medium',
+                          color: Color(0xffF9703B)),
+                    ),
+                  ],
+                ),
+
+
               ],
             ),
           ),
